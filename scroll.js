@@ -1,9 +1,10 @@
 (function () {
 	'use strict';
 
+	var blocks = Array.prototype.slice.call(document.querySelectorAll('.image-block'));
+	var images = Array.prototype.slice.call(document.querySelectorAll('.image-block .image'));
+
 	var height;
-	var blocks;
-	var images;
 	var offsets;
 	var blockHeights;
 	var imageHeights;
@@ -12,8 +13,6 @@
 	// Precalculate all the things we can
 	function updateDeps() {
 		height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-		blocks = Array.prototype.slice.call(document.querySelectorAll('.image-block'));
-		images = Array.prototype.slice.call(document.querySelectorAll('.image-block .image'));
 		offsets = blocks.map(function (block) {
 			return block.offsetTop;
 		});
