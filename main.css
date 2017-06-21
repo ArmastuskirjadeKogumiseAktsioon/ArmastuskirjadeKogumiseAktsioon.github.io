@@ -1,0 +1,85 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-size: calc(14px + 0.1vw);
+	perspective: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+}
+
+header.image-block {
+	height: 24vw;
+	min-height: 18em;
+	color: white;
+}
+
+header h1 {
+	display: block;
+	padding-top: 8vw;
+	font-size: 4em;
+	width: 9em;
+}
+
+header .container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.image-block {
+	height: calc(300px + 5vw);
+	position: relative;
+	overflow: hidden;
+	transform: translateZ(-2px) scale(2);
+}
+
+.image-1 {
+	background-size: cover;
+	background-position: center center;
+	background-color: #907b88;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('img/giulia-bertelli-94303.jpg');
+}
+
+.container {
+	margin: 0 auto;
+	width: 54vw;
+	min-width: 500px;
+	padding: calc(30px + 4vw) 2vw;
+}
+
+.container.right {
+	text-align: right;
+}
+
+p {
+	display: inline-block;
+	text-align: left;
+	width: 60%;
+	font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.separator {
+	display: block;
+	width: 100%;
+	height: calc(50px + 1vw);
+	margin: calc(-50px - 0.5vw) 0 calc(-50px - 1vw);
+	fill: white;
+	position: relative;
+	z-index: 1;
+}
+
+.separator.bottom {
+	margin: calc(-50px - 1vw) 0 calc(-50px - 0.5vw);
+}
