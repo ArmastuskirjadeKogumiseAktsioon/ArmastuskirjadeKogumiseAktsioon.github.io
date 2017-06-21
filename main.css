@@ -2,7 +2,6 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-size: calc(14px + 0.1vw);
-	perspective: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,16 +13,18 @@ h1 {
 }
 
 header.image-block {
-	height: 24vw;
-	min-height: 18em;
+	height: calc(140px + 20vw);
 	color: white;
 }
 
 header h1 {
+	position: relative;
 	display: block;
-	padding-top: 8vw;
+	padding-top: 10vw;
 	font-size: 4em;
 	width: 9em;
+	z-index: 1;
+	text-shadow: 3px 3px #656361;
 }
 
 header .container {
@@ -35,19 +36,26 @@ header .container {
 	height: calc(300px + 5vw);
 	position: relative;
 	overflow: hidden;
-	transform: translateZ(-2px) scale(2);
+	/* background-color: #3f3b52; */
+	/* background-color: #907b88; */
+}
+
+.image {
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: -50%;
+	left: 0;
+	right: 0;
+	bottom: -50%;
 }
 
 .image-1 {
-	background-size: cover;
-	background-position: center center;
-	background-color: #907b88;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	background-image: url('img/giulia-bertelli-94303.jpg');
+}
+
+.image-2 {
+	background-image: url('img/annie-spratt-197448.jpg');
 }
 
 .container {
