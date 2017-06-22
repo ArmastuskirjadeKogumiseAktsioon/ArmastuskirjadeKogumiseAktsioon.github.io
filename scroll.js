@@ -4,31 +4,27 @@
 	var blocks = Array.prototype.slice.call(document.querySelectorAll('.image-block'));
 	var images = Array.prototype.slice.call(document.querySelectorAll('.image-block .image'));
 
-	var height;
-	var offsets;
-	var blockHeights;
-	var imageHeights;
-	var ratios;
-	var maxPositionReciprocals;
+	var windowHeight = 0;
+	var offsets = [];
+	var blockHeights = [];
+	var imageHeights = [];
+	var ratios = [];
+	var maxPositionReciprocals = [];
 	
 	// Precalculate all the things we can
 	function updateDeps() {
-		height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-		offsets = blocks.map(function (block) {
-			return block.offsetTop;
-		});
-		blockHeights = blocks.map(function (block) {
-			return block.offsetHeight;
-		});
+		windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		imageHeights = images.map(function (image) {
 			return image.offsetHeight;
 		});
-		ratios = blockHeights.map(function (blockHeight, index) {
-			return 100 * blockHeight / imageHeights[index];
+		blocks.forEach(function (block, index) {
+			offsets[index] = block.offsetTop;
+			blockHeights[index] = block.offsetHeight;
+			ratios[index] = 100.0 * block.offsetHeight / imageHeights[index];
 		});
 		maxPositionReciprocals = offsets.map(function (offset, index) {
 			var blockHeight = blockHeights[index];
-			return 1.0 / Math.max(offset, height + blockHeight);
+			return 1.0 / Math.max(offset, windowHeight + blockHeight);
 		});
 		// Ensure the handle is up-to-date once we're done
 		scrollHandler();
@@ -39,11 +35,10 @@
 		offsets.forEach(function (offset, index) {
 			var blockHeight = blockHeights[index];
 			var block = blocks[index];
-			var imageHeight = imageHeights[index];
 			var ratio = ratios[index];
 			var maxPositionReciprocal = maxPositionReciprocals[index];
 
-			var position = scroll - offset + height;
+			var position = scroll - offset + windowHeight;
 			// Offset from [0.0, 1.0] to [-0.5, 0.5]
 			var delta = Math.max(Math.min(position * maxPositionReciprocal, 1.0), 0.0) - 0.5;		
 
