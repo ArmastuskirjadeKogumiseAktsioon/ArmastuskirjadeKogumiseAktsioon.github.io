@@ -4,7 +4,9 @@
 	var request = new XMLHttpRequest();
 	request.open('GET', 'updates.md', true);
 	request.onload = function () {
-		console.log(request.response);
+		if (request.status === 200) {
+			console.log(request.response);
+		}
 	}
 	request.send();
 })();
