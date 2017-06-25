@@ -51,14 +51,6 @@ header .container {
 	bottom: -50%;
 }
 
-.image-1 {
-	background-image: url('img/giulia-bertelli-94303.jpg');
-}
-
-.image-2 {
-	background-image: url('img/annie-spratt-197448-2.jpg');
-}
-
 .container {
 	margin: 0 auto;
 	width: 50vw;
@@ -93,4 +85,14 @@ p {
 
 .separator.bottom {
 	margin: calc(-49px - 1vw) 0 calc(-50px - 0.5vw);
+}
+
+.separator.dark {
+	margin: 0;
+	fill: #26282b;
+}
+
+footer {
+	height: calc(140px + 10vw);
+	background-color: #26282b;
 }
