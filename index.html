@@ -63,16 +63,13 @@ title: Armasturkirjade Kogumise Aktsioon
 			<path d="M100 0 L 100 100 L 0 100 L 0 90" />
 		</svg>
 		<section class="container right">
-			<p>Armastuskirjade Kogumise Aktsioon annab noortele võimaluse läbi inimeste kirja pandud teksti kogeda, mida tähendab üks
-				tõeline armastuslugu. Eestlased üldjuhul oma tundeid väga avameelselt ei väljenda ning armastust on kombeks avaldada
-				vaid erilistel puhkudel.
-			</p>
-			<p>Noored koguvad käsitsi kirjutatud armastuskirju, mida inimesed on teineteisele saatnud ning mis nende jaoks olulise väärtusega.
-				Oodatud on nii uued kui ka juba aastate eest kirjutatud kirjad.</p>
-			<p>Armastuskirjade Kogumise Aktsioon annab noortele võimaluse läbi inimeste kirja pandud teksti kogeda, mida tähendab üks
-				tõeline armastuslugu. Eestlased üldjuhul oma tundeid väga avameelselt ei väljenda ning armastust on kombeks avaldada
-				vaid erilistel puhkudel.
-			</p>
+			<ul>
+				{% for post in site.posts %}
+				<li>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
 		</section>
 		<svg class="separator bottom dark" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M100 0 L 100 100 L 0 100 L 0 90" />
