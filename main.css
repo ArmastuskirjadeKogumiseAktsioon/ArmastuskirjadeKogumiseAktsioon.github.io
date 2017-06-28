@@ -133,6 +133,15 @@ img.contact {
 	border-radius: 50%;
 }
 
+.letter-item img {
+	max-width: 20vw;
+    float: left;
+}
+
+.media-item img {
+	max-width: 100%;
+}
+
 footer {
 	background-color: #313a48;
 }

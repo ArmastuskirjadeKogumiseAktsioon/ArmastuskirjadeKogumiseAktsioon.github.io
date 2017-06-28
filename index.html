@@ -94,7 +94,7 @@
 				<h2>Saabunud kirjad</h2>
 				<ul>
 					{% for item in site.letters %}
-					<li>{{ item.content }}</li>
+					<li class="letter-item">{{ item.content }}</li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -107,7 +107,7 @@
 				<h2>Meedias</h2>
 				<ul>
 					{% for item in site.media %}
-					<li>{{ item.content }}</li>
+					<li class="media-item">{{ item.content }}</li>
 					{% endfor %}
 				</ul>
 			</div>
