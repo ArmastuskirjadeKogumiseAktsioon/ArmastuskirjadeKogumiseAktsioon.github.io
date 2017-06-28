@@ -87,6 +87,10 @@ p.center {
 	width: 90%;
 }
 
+.container.full p {
+	width: 100%;
+}
+
 p {
 	display: inline-block;
 	text-align: left;
