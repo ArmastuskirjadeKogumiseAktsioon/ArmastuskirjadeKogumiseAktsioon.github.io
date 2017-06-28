@@ -39,8 +39,11 @@
 			var maxPositionReciprocal = maxPositionReciprocals[index];
 
 			var position = scroll - offset + windowHeight;
+			var preoffset = position * maxPositionReciprocal
+			if (preoffset < 0 || preoffset > 1.0) return;
+
 			// Offset from [0.0, 1.0] to [-0.5, 0.5]
-			var delta = Math.max(Math.min(position * maxPositionReciprocal, 1.0), 0.0) - 0.5;		
+			var delta = preoffset - 0.5;		
 
 			var image = images[index];
 			image.style.transform = 'translateY(' + ratio * delta + '%)'
