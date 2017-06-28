@@ -101,10 +101,8 @@
 			<div class="container right">
 				<h2>Meedias</h2>
 				<ul>
-					{% for post in site.posts %}
-					<li>
-						<a href="{{ post.url }}">{{ post.content }}</a>
-					</li>
+					{% for item in site.media %}
+					<li>{{ item.content }}</li>
 					{% endfor %}
 				</ul>
 			</div>
