@@ -133,6 +133,12 @@ img.contact {
 	border-radius: 50%;
 }
 
+li.letter-item h1,
+li.media-item h1 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
 .letter-item img {
 	max-width: 20vw;
     float: left;
