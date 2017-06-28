@@ -185,12 +185,12 @@ footer p {
     top: 50%;
     -webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	left: calc(-540px - 1vw);
+	left: calc(-600px + 4vw);
 }
 
 .line.right {
 	left: auto;
-	right: calc(-540px - 1vw);
+	right: calc(-600px + 4vw);
 }
 
 .line-1 {
