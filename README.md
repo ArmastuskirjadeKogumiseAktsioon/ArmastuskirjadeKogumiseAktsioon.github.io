@@ -10,8 +10,8 @@ Fail peab järgima kahte juhist:
 ```markdown
 ---
 ---
-# Sissekande pealkiri
-Sisu tekst jm.
+# Sissekande pealkiri (kui tahad, pealkiri pole kohustuslik)
+Sisu tekst, pildid jms.
 ```
 
 ### Sisu formattimine
