@@ -7,7 +7,7 @@ Fail peab järgima kahte juhist:
  * Failinimi peab olema formaadis `YYYY-MM-DD-item.md`, näiteks `2017-06-25-item.md`
  * Faili sisu peab olema alltoodud formaadis:
 
-```pandoc
+```markdown
 ---
 ---
 # Sissekande pealkiri
@@ -17,26 +17,26 @@ Sisu tekst jm.
 ### Sisu formattimine
 Sisu saad formattida [markdownis](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Lühikesed näited all, kui hätta jääd võid lihtsalt helistada.    
 Lingi lisamine:
-```pandoc
+```markdown
 [Paide ANK](http://paideank.ee)
 ```
 Pildi lisamine:
-```pandoc
+```markdown
 ![Pildi pealkiri](img/mingi_pilt.jpg)
 ```
 Rasvane- ja kursiivkiri:
-```pandoc
+```markdown
 **Rasvane kiri** (kahed tärnid ümber)
 *Kursiivis kiri* (ühed tärnid ümber)
 ```
 Paragrahvide ja uute ridade haldus:
-```pandoc
+```markdown
 Üks jupp teksti.
 (tühi rida)
 Teine jupp teksti.
 ```
 Või alternatiivselt
-```pandoc
+```markdown
 Üks jupp teksti.  (kaks tühikut rea lõpus)
 Teine jupp teksti.
 ```
