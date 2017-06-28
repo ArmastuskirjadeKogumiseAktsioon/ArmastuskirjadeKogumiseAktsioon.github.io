@@ -3,34 +3,49 @@ body {
 	font-size: 14px;
 	font-size: calc(14px + 0.1vw);
 	min-width: 560px;
+	color: #536b8c;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+a,
+h2 {
+	color: #ac6dcc;
+}
+
 header h1 {
 	font-family: 'Amatic SC', cursive;
-}
-
-header.image-block {
-	height: calc(140px + 20vw);
-	color: white;
-}
-
-header h1 {
 	position: relative;
-	display: block;
-	padding-top: 10vw;
+	display: inline-block;
+	top: 10vw;
 	font-size: 4em;
 	width: 9em;
 	z-index: 1;
-	text-shadow: 3px 3px #252321;
+	text-shadow: 3px 3px #252321, 0 0 1px #252321, 4px 1px 45px rgba(0, 0, 0, 0.25);
 }
 
 header .container {
 	padding-top: 0;
 	padding-bottom: 0;
+}
+
+header.image-block {
+	height: calc(140px + 20vw);
+	color: white;
+	text-align: center;
+	background-color: #462e52;
+}
+
+header .image {
+	opacity: 0.9;
 }
 
 .image-block {
@@ -51,7 +66,12 @@ header .container {
 	bottom: -50%;
 }
 
+section.alt {
+	background-color: #f6f9fc;
+}
+
 .container {
+	position: relative;
 	margin: 0 auto;
 	width: 50vw;
 	min-width: 500px;
@@ -61,6 +81,15 @@ header .container {
 
 .container.right {
 	text-align: right;
+}
+
+.container.center,
+p.center {
+	text-align: center;
+}
+
+.container.center p {
+	width: 90%;
 }
 
 p {
@@ -98,7 +127,56 @@ ul {
 	fill: #26282b;
 }
 
+.separator.alt {
+	fill: #f6f9fc;
+}
+
+img.contact {
+	margin-bottom: 0.5vw;
+	width: calc(80px + 2vw);
+	height: calc(80px + 2vw);
+	border-radius: 50%;
+}
+
 footer {
-	height: calc(140px + 10vw);
-	background-color: #26282b;
+	background-color: #313a48;
+}
+
+footer h2,
+footer p {
+	color: #7f8998;
+}
+
+.line {
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: calc(120px + 2vw);
+    width: calc(500px + 8vw);
+	pointer-events: none;
+	opacity: 0.25;
+    top: 50%;
+    transform: translateY(-50%);
+	left: -24vw;
+}
+
+.line.right {
+	left: auto;
+	right: -24vw;
+}
+
+.line-1 {
+	background-image: url('img/lines/line-1.png');
+}
+
+.line-2 {
+	background-image: url('img/lines/line-2.png');
+}
+
+.line-3 {
+	background-image: url('img/lines/line-3.png');
+}
+
+.line-4 {
+	background-image: url('img/lines/line-4.png');
 }
