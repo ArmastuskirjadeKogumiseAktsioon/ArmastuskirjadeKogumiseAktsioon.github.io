@@ -76,6 +76,7 @@ section.alt {
 	width: 50vw;
 	min-width: 500px;
 	padding: calc(30px + 4vw) 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -182,7 +183,8 @@ footer p {
 	pointer-events: none;
 	opacity: 0.25;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 	left: calc(-540px - 1vw);
 }
 
