@@ -137,8 +137,14 @@ img.contact {
 	border-radius: 50%;
 }
 
-li.letter-item h1,
-li.media-item h1 {
+/* Temporary hide */
+.letter-item,
+.media-item {
+	display: none;
+}
+
+.letter-item h1,
+.media-item h1 {
     font-size: 1em;
     text-transform: uppercase;
 }

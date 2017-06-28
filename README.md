@@ -3,7 +3,7 @@
 ### Kuidas lisada uut meediakajastust või saadetud kirja
 Kui sul on sissekandega seotud pildimaterjali, mine kausta `img`, lae fail sinna üles (nupp `Upload files`) ja vajuta `Commit`.  
 Seejärel mine vastavalt kausta `_media` või `_letters`, loo sissekande jaoks uus fail (nupp `Create new file`), kirjuta valmis ja siis tee `Commit`.  
-Fail peab järgima kahte juhist:
+Sissekande fail peab järgima kahte juhist:
  * Failinimi peab olema formaadis `YYYY-MM-DD-item.md`, näiteks `2017-06-25-item.md`
  * Faili sisu peab olema alltoodud formaadis:
 
