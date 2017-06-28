@@ -1,24 +1,12 @@
 .image-1 {
-	background-image: url('img/annie-spratt-197448-2.jpg');
-	background-position: right center;
+	background-image: url('img/bg/giulia-bertelli-170653.jpg');
 }
 
 .image-2 {
-	background-image: url('img/giulia-bertelli-94303.jpg');
+	background-image: url('img/bg/giulia-bertelli-140548.jpg');
 }
 
 .image-3 {
-	background-image: url('img/giulia-bertelli-140548.jpg');
-}
-
-.image-4 {
-	background-image: url('img/giulia-bertelli-170653.jpg');
-}
-
-.image-5 {
-	background-image: url('img/giulia-bertelli-272744.jpg');
-}
-
-.image-6 {
-	background-image: url('img/annie-spratt-277569.jpg');
+	background-image: url('img/bg/annie-spratt-197448-2.jpg');
+	background-position: right center;
 }
