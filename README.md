@@ -1,5 +1,9 @@
 # Armastuskirjade Kogumise Aktsioon
 
+### Kuidas muuta avalehe tekste
+Vali `index.html`, vali `Edit this file` (pliiatsi kujutisega nupp `Raw`, `Blame` & `History` kõrval, ish üleval paremal), tee oma muudatused ja tee `Commit`.  
+Ole hoolas, et HTML tagid korrektselt suletud saaks. Ilmselt saad ilusti olemasolevate näidete järgi tehtud, kui on mure, või midagi katki läheb, võid lihtsalt helistada.
+
 ### Kuidas lisada uut meediakajastust või saadetud kirja
 Kui sul on sissekandega seotud pildimaterjali, mine kausta `img`, lae fail sinna üles (nupp `Upload files`) ja vajuta `Commit`.  
 Seejärel mine vastavalt kausta `_media` või `_letters`, loo sissekande jaoks uus fail (nupp `Create new file`), kirjuta valmis ja siis tee `Commit`.  
