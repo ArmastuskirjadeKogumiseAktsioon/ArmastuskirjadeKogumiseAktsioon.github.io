@@ -26,7 +26,7 @@ Lingi lisamine:
 ```
 Pildi lisamine:
 ```markdown
-![Pildi pealkiri](img/mingi_pilt.jpg)
+![Pildi hover tekst](img/mingi_pilt.jpg)
 ```
 Rasvane- ja kursiivkiri:
 ```markdown
