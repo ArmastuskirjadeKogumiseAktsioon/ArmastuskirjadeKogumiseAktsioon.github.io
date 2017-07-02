@@ -110,7 +110,7 @@
 		<section>
 			<div class="container full">
 				<h2>Saabunud kirjad</h2>
-				<ul>
+				<ul class="letter-list">
 					{% for item in site.letters %}
 					<li class="letter-item">{{ item.content }}</li>
 					{% endfor %}
@@ -123,7 +123,7 @@
 		<section class="alt">
 			<div class="container right">
 				<h2>Meedias</h2>
-				<ul>
+				<ul class="media-list">
 					{% for item in site.media %}
 					<li class="media-item">{{ item.content }}</li>
 					{% endfor %}
