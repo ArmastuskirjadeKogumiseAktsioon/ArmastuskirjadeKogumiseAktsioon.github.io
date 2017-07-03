@@ -150,13 +150,31 @@ img.contact {
 
 /* Temporary hide */
 .media-list {
-	max-height: calc(250px + 20vw)
+	max-height: calc(250px + 5vw);
+	overflow: auto;
+	padding: 1em;
+}
+
+.media-item {
+	width: 60%;
+	min-width: 500px;
+	border-bottom: 1px solid #ccd1d8;
+    display: inline-block;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+.media-item:last-child {
+	border-bottom: none;
+}
+
+.media-item p {
+	width: 100%;
+	min-width: 0;
 }
 
 .letter-item h1,
 .media-item h1 {
-	display: inline-block;
-	width: 60%;
 	text-align: left;
     font-size: 1em;
     text-transform: uppercase;
