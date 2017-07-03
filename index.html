@@ -124,7 +124,7 @@
 			<div class="container center">
 				<h2>Meedias</h2>
 				<ul class="media-list">
-					{% for item in site.media %}
+					{% for item in site.media reversed %}
 					<li class="media-item">{{ item.content }}</li>
 					{% endfor %}
 				</ul>
