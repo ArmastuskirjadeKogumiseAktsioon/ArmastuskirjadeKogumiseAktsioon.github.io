@@ -151,16 +151,16 @@ img.contact {
 /* Temporary hide */
 .media-list {
 	max-height: calc(250px + 5vw);
+	width: 70%;
+	min-width: 500px;
 	overflow: auto;
 }
 
 .media-item {
-	width: 60%;
-	min-width: 500px;
 	border-bottom: 1px solid #ccd1d8;
     display: inline-block;
-    margin-bottom: 2em;
     padding-bottom: 1em;
+	margin: 1em 1em 2em;
 	text-align: left;
 }
 
