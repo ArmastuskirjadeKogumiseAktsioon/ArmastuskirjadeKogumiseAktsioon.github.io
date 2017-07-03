@@ -1,6 +1,17 @@
 (function () {
 	'use strict';
 
+	// If the user has a mobile device or IE, don't bother and prefer performance
+	var ua = window.navigator.userAgent;
+	var isOldIE = ua.indexOf("MSIE ") > 0;
+	var isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
+	var isEdge = ua.indexOf('Edge/');
+	// A lazy proxy for mobiles
+	var isSmall = (window.innerWidth <= 800 && window.innerHeight <= 600);
+	if (isOldIE || isIE11 || isEdge || isSmall) {
+		return;
+	}
+
 	var blocks = Array.prototype.slice.call(document.querySelectorAll('.image-block'));
 	var images = Array.prototype.slice.call(document.querySelectorAll('.image-block .image'));
 
