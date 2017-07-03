@@ -154,6 +154,7 @@ img.contact {
 	width: 70%;
 	min-width: 500px;
 	overflow: auto;
+	margin: 0 auto;
 }
 
 .media-item {
