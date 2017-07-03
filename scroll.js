@@ -5,7 +5,7 @@
 	var ua = window.navigator.userAgent;
 	var isOldIE = ua.indexOf("MSIE ") > 0;
 	var isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
-	var isEdge = ua.indexOf('Edge/');
+	var isEdge = ua.indexOf('Edge/') > 0;
 	// A lazy proxy for mobiles
 	var isSmall = (window.innerWidth <= 800 && window.innerHeight <= 600);
 	if (isOldIE || isIE11 || isEdge || isSmall) {
