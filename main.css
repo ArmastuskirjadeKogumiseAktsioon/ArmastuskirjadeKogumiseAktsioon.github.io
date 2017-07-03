@@ -152,7 +152,6 @@ img.contact {
 .media-list {
 	max-height: calc(250px + 5vw);
 	overflow: auto;
-	padding: 1em;
 }
 
 .media-item {
@@ -162,6 +161,7 @@ img.contact {
     display: inline-block;
     margin-bottom: 2em;
     padding-bottom: 1em;
+	text-align: left;
 }
 
 .media-item:last-child {
